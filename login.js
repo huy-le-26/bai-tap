@@ -56,8 +56,19 @@ class login {
       this.loginSignup.loginLink.classList.add('text' , 'signup-link')
       this.container.Button.value.addEventListener("click", (e) => {
         e.preventDefault()
-        const nameValue = this.inputName.getValue();
-        
+        const EmailInput = this.inputEmail.getValue();
+
+        if (!emailValue) {
+            this.inputEmail.setErrorMessage("Email cannot be empty")
+        } else {
+            this.inputEmail.setErrorMessage("")
+        }
+        const passwordValue = this.inputPassword.getValue();
+         if (!passwordValue) {
+            this.inputPassword.setErrorMessage("Password cannot be empty")
+        }else{
+            this.inputPassword.setErrorMessage("")
+    
     
       
  }
